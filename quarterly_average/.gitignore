@@ -1,0 +1,23 @@
+# IDEs
+.idea/
+.vscode/
+
+# Python cache e builds
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+*.log
+
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.venv/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
