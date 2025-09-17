@@ -1,58 +1,60 @@
-# Exercício: Classe TV
+# Exercise: TV Class
 
-Este exercício é uma prática de **Programação Orientada a Objetos (OOP)** em Python.  
-O objetivo é criar uma classe que simula o funcionamento de uma televisão, permitindo:
+This exercise is a practice of **Object-Oriented Programming (OOP)** in Python.  
+The goal is to create a class that simulates the behavior of a television, allowing:
 
-- Ligar e desligar a TV
-- Mudar de canal para cima ou para baixo
-- Acompanhar o canal atual
+- Turn the TV on and off  
+- Change channels up or down  
+- Keep track of the current channel  
 
 ---
 
-## Código
+## Code
 
-O código está no arquivo `tv.py`.
+The code is in the `tv.py` file.
 
-### Exemplo de uso:
+### Example of use:
 
 ```python
 from tv import TV
 
-# Cria uma TV
+# Create a TV
 television = TV()
 
-# Verifica se a TV está ligada
+# Check if the TV is on
 print(television.on)  # False
 
-# Liga a TV
+# Turn the TV on
 television.power()
 print(television.on)  # True
 
-# Muda de canal
+# Change channel
 television.change_channel_up()
 print(television.channel)  # 6
+
 ```
 ___
 
-## Detalhes da implementação
+## Implementation details
 
-A TV começa desligada (on = False) e no canal 5.
+The TV starts turned off (on = False) and on channel 5.
 
-### Métodos disponíveis:
+### Available methods:
 
 ```
-power(): liga ou desliga a TV.
+power(): turns the TV on or off.
 
-change_channel_up(): aumenta o canal (somente se a TV estiver ligada).
+change_channel_up(): increases the channel (only if the TV is on).
 
-change_channel_down(): diminui o canal (somente se a TV estiver ligada).
+change_channel_down(): decreases the channel (only if the TV is on).
+
 ```
 
-A implementação garante que os canais só mudam quando a TV está ligada.
+The implementation ensures that channels only change when the TV is on.
 
 ___
 
-## Autor
+## Author
 
 **José Amaury**
 
